@@ -1,0 +1,51 @@
+@use '../utility/variables' as variable;
+
+.btn {
+    padding: 16px 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    transition: 0.3 ease all;
+    -webkit-transition: 0.3 ease all;
+    -moz-transition: 0.3 ease all;
+    -ms-transition: 0.3 ease all;
+    -o-transition: 0.3 ease all;
+}
+
+.btn-orange {
+    color: #ffffff;
+    background-color: variable.$orange;
+    border: 1px solid variable.$orange;
+
+    &:hover {
+        color: #ffffff;
+        background-color: variable.$orange;
+        border: 1px solid variable.$orange;
+    }
+}
+
+.btn-yellow {
+    color: #1d2939;
+    background-color: variable.$yellow;
+    border: 1px solid variable.$yellow;
+
+    &:hover {
+        color: #1d2939;
+        background-color: variable.$yellow;
+        border: 1px solid variable.$yellow;
+    }
+}
+
+.btn-orange-outline {
+    color: variable.$orange;
+    background-color: transparent;
+    border: 1px solid variable.$orange;
+
+    &:hover {
+        color: variable.$orange;
+        background-color: transparent;
+        border: 1px solid variable.$orange;
+    }
+}

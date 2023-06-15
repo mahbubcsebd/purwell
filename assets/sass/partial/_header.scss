@@ -1,0 +1,64 @@
+@use '../utility/index' as variable;
+
+.header {
+    background: #fff7f5;
+    padding: 4px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.navbar-expand-xl {
+    padding: 18px 0;
+    .navbar-nav {
+        gap: 24px;
+
+        .nav-link {
+            padding-right: 0;
+            padding-left: 0;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #667085;
+        }
+
+        .active {
+            color: variable.$orange !important;
+        }
+
+        .dropdown-item {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            padding: 8px 12px;
+            margin-bottom: 2px;
+        }
+
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            color: #fff !important;
+            background-color: variable.$orange !important;
+        }
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+            background-color: variable.$orange !important;
+            color: #fff !important;
+        }
+    }
+}
+
+.navbar-collapse {
+    flex-grow: inherit;
+}
