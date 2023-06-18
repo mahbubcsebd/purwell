@@ -1350,6 +1350,30 @@ label {
   top: 7px;
 }
 
+.subscribe-box-2 {
+  align-items: start !important;
+  padding: 20px;
+}
+.subscribe-box-2 .subscribe-cat-2 {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 50px;
+  z-index: 9;
+}
+.subscribe-box-2 .subscribe-content {
+  justify-content: start;
+  align-items: start;
+  max-width: 480px;
+}
+.subscribe-box-2 .subscribe-content h2 {
+  text-align: left !important;
+  color: #fff !important;
+}
+.subscribe-box-2 .subscribe-content .subscribe-form-box {
+  width: 480px;
+}
+
 .footer-area {
   position: relative;
 }
@@ -1775,6 +1799,10 @@ label {
 
 .accordion-button:focus {
   border-color: #98a2b3;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 0;
 }
 
 .accordion-body {

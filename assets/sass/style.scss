@@ -1133,6 +1133,35 @@ label {
     right: 8px;
     top: 7px;
 }
+
+// Subscribe 2
+.subscribe-box-2 {
+    align-items: start !important;
+    padding: 20px;
+
+    .subscribe-cat-2 {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 50px;
+        z-index: 9;
+    }
+
+    .subscribe-content {
+        justify-content: start;
+        align-items: start;
+        max-width: 480px;
+
+        h2 {
+            text-align: left !important;
+            color: #fff !important;
+        }
+
+        .subscribe-form-box {
+            width: 480px;
+        }
+    }
+}
 // Subscription Section End
 
 // Footer Section Start
