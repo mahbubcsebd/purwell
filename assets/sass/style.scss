@@ -151,7 +151,7 @@ a {
 
 /* Text Color */
 .text-orange {
-    color: var(--orange) !important;
+    color: variable.$orange !important;
 }
 
 .text-purple {
@@ -1139,14 +1139,6 @@ label {
     align-items: start !important;
     padding: 20px;
 
-    .subscribe-cat-2 {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        right: 50px;
-        z-index: 9;
-    }
-
     .subscribe-content {
         justify-content: start;
         align-items: start;
@@ -1161,6 +1153,14 @@ label {
             width: 480px;
         }
     }
+}
+
+.subscribe-cat-2 {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 60px;
+    z-index: 9;
 }
 // Subscription Section End
 
@@ -1667,3 +1667,154 @@ label {
 /*=========================================================================================
     12.0 - FAQ Page End
  ==========================================================================================*/
+
+//  Teams Page Start
+
+.single-team-member {
+    padding: 26px;
+    background: #ffffff;
+    box-shadow: 1px 2px 5px rgba(132, 132, 132, 0.06);
+    border-radius: 30px;
+
+    .teams-img-box {
+        height: 360px;
+        margin-bottom: 24px;
+        border-radius: 26px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .teams-socials {
+            position: absolute;
+            content: '';
+            bottom: 25px;
+            right: -100px;
+            transition: 0.5s ease all;
+            -webkit-transition: 0.5s ease all;
+            -moz-transition: 0.5s ease all;
+            -ms-transition: 0.5s ease all;
+            -o-transition: 0.5s ease all;
+
+            li {
+                a {
+                    width: 32px;
+                    height: 32px;
+                    background: #ffffff94;
+                    margin-bottom: 10px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #344054;
+                    transition: 0.3s ease all;
+
+                    &:hover {
+                        background: orange;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .teams-content-box {
+        .teams-member-name {
+            font-family: 'Syne';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+            color: #344054;
+            text-align: center;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .teams-member-designation {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: #667085;
+            text-align: center;
+        }
+    }
+
+    &:hover {
+        .teams-socials {
+            position: absolute;
+            content: '';
+            right: 25px;
+        }
+    }
+}
+//  Teams Page End
+
+// Pricing Page Start
+.single-pricing {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(123, 123, 123, 0.06);
+    border-radius: 20px;
+}
+
+.pricing-name {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #170f49;
+    margin-bottom: 18px;
+}
+
+.pricing-rate {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 68px;
+    color: #170f49;
+}
+
+.pricing-rate span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6f6c90;
+}
+
+.pricing-top {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.pricing-collections li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.pricing-collections li:last-child {
+    margin-bottom: 40px;
+}
+
+.pricing-collections li p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #344054;
+}
+
+.pricing-bottom {
+    padding: 0 30px 45px 30px;
+}
+// Pricing Page End

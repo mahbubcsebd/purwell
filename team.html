@@ -5,11 +5,425 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PetCare | Home</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- Syne Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Syne Google Font -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Video JS -->
+    <link rel="stylesheet" href="assets/css/video-js.css">
+    <!-- Quill CSS -->
+    <link rel="stylesheet" href="assets/css/quill.snow.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
+
+    <!-- Header Section Start -->
+    <header id="header" class="header header-2">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-xl">
+                    <div class="container-fluid">
+                        <a class="navbar-brand header-logo" href="index.html">
+                            <div class="">
+                                <img id="header-logo" src="assets/images/icons/logo.svg" alt="logo">
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#headerNavbarDropdown" aria-controls="headerNavbarDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-menu-icon"><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="headerNavbarDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="index.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Home
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item active" href="index.html">Home 1</a></li>
+                                        <li><a class="dropdown-item" href="index2.html">Home 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                                        <li><a class="dropdown-item" href="services.html">Services</a></li>
+                                        <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                        <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
+                                        <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-buttons d-none d-xl-flex">
+                            <a href="contact.html" class="btn btn-orange">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+
+    <!-- Page Title Section Start -->
+    <div id="page-banner" class="page-banner section">
+        <div class="page-title-area">
+            <img src="assets/images/banner-bg.svg" alt="banner" class="banner-bg">
+            <div class="page-title-box">
+                <h2 class="page-title">Our Team</h2>
+                <nav style="--bs-breadcrumb-divider: '-';" aria-label="breadcrumb">
+                    <ol class="breadcrumb page-breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Teams</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Page Title Section End -->
+
+
+
+    <!-- Teams Section Start -->
+    <div id="teams" class="teams section">
+        <div class="teams-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-1.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Eric K. Frerichs</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-2.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Cathy J. Gomez</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-3.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Lola J. Green</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-4.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Lisa D. Jolley</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-5.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Evelyn M. Keach</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-6.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Martha R. Myer</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-7.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Ashley M. Snow</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-8.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Latoya M. Rose</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="single-team-member">
+                            <div class="teams-img-box">
+                                <img src="assets/images/team-9.png" alt="team">
+                                <ul class="teams-socials">
+                                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teams-content-box">
+                                <a href="#" class="teams-member-name">Lynn A. McGee</a>
+                                <p class="teams-member-designation">Veterinary</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Teams Section End -->
+
+
+
+    <!-- Subscribe Section Start -->
+    <div id="subscribe" class="subscribe section">
+        <div class="subscribe-area">
+            <div class="container">
+                <div class="row">
+                    <div class="subscibe-area position-relative">
+                        <img class="subscribe-bg" src="assets/images/banner-bg.svg" alt="subscribe-bg">
+                        <img class="subscribe-cat-2" src="assets/images/subscribe-2.png" alt="subscribe-cat">
+                        <div class="subscribe-box subscribe-box-2">
+                            <div class="subscribe-content">
+                                <p>Get In Touch</p>
+                                <h2>Helpful Hints for Keeping Your Pet Happy and Healthy</h2>
+                                <div class="subscribe-form-box">
+                                    <input class="form-control" type="text" placeholder="Your Mail Here">
+                                    <button class="btn btn-orange">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe Section End -->
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer">
+        <div class="footer-area">
+            <img src="assets/images/footer-bg.svg" alt="footer-bg" class="footer-bg">
+            <div class="container">
+                <div class="row footer-middle">
+                    <div class="col-xl-5 col-lg-3 col-md-4 col-sm-8 mb-4 mb-lg-0">
+                        <div class="footer-content">
+                            <div class="footer-logo">
+                                <img src="assets/images/icons/logo-footer.svg" alt="logo">
+                            </div>
+                            <p>Pet care and veterinary services are crucial for maintaining the health and well-being of
+                                our beloved animal companions</p>
+                            <ul class="footer-social">
+                                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/?original_referer="><i
+                                            class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 mb-4 mb-lg-0">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Quick Links</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 mb-4 mb-sm-0">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Legal</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy & Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 mb-4 mb-sm-0">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Legal</h2>
+                            <ul class="contact-info-collection">
+                                <li class="mb-4">
+                                    <p><span><i class="fa-solid fa-phone"></i></span></p> +1 234 567 890
+                                </li>
+                                <li class="mb-4">
+                                    <p><span><i class="fa-regular fa-envelope"></i></span></p> purrwell@gmail.com
+                                </li>
+                                <li>
+                                    <p><span><i class="fa-solid fa-location-dot"></i></span></p> 2092 Owen LaneFort
+                                    Myers, FL 33901
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-devider"></div>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p class="footer-copyright">&copy; 2023 Purrwell. All Rights Reserved</p>
+                    <div class="footer-bottom-link">
+                        <a href="#">Privay & Policy</a>
+                        <p>|</p>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <!-- Waypoint -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <!-- Quill Js -->
+    <script src="assets/js/quill.js"></script>
+    <!-- Video Js -->
+    <script src="assets/js/video.min.js"></script>
+    <script src="assets/js/videojs-playlist.min.js"></script>
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
