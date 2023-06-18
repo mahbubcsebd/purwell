@@ -58,9 +58,22 @@ h1, h2, h3 {
   background-color: #ff5b2e !important;
   color: #fff !important;
 }
+.navbar-expand-xl .header-buttons .btn {
+  padding: 10px 24px;
+}
 
 .navbar-collapse {
   flex-grow: inherit;
+}
+
+.header-2 {
+  background: transparent;
+  margin-top: 50px;
+}
+.header-2 .navbar.navbar-expand-xl {
+  padding: 12px 10px;
+  background: #fff;
+  border-radius: 8px;
 }
 
 .hero {
@@ -543,45 +556,76 @@ a:hover {
 }
 
 /* Page Title Box Start */
-.page-title-box {
-  border-radius: 20px;
-  margin-top: 150px;
+.page-banner {
+  padding: 20px;
+}
+
+.page-title-area {
+  border-radius: 30px;
   padding: 30px;
-  display: flex;
   height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-title-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
-.breadcrumb-item a {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  color: #0a033c;
-  display: inherit;
-}
-
-.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  color: #0a033c;
-}
-
-.page-breadcrumb .breadcrumb-item.active {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  color: #0a033c;
+.banner-bg {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .page-title {
-  font-weight: 600;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
   font-size: 48px;
-  line-height: 62px;
-  color: #0a033c;
+  line-height: 58px;
+  color: #ffffff;
+  position: relative;
+  z-index: 4;
+  margin-bottom: 12px;
+}
+
+.breadcrumb-item a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  display: inherit;
+}
+
+.page-breadcrumb {
+  position: relative;
+  z-index: 4;
+}
+
+.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.page-breadcrumb .breadcrumb-item.active {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
 }
 
 /* Page Title Box End */
@@ -1701,4 +1745,83 @@ label {
 
 /*=========================================================================================
     24.0 - User All Form Page End
+ ==========================================================================================*/
+/*=========================================================================================
+    12.0 - FAQ Page Start
+ ==========================================================================================*/
+.accordion {
+  --bs-accordion-bg: transparent;
+}
+
+.accordion-button {
+  border: 0;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  color: #475467;
+  border-bottom: 1px solid #98a2b3;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.accordion-button:focus {
+  border-color: #98a2b3;
+}
+
+.accordion-body {
+  padding-top: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  color: #667085;
+}
+
+.accordion-button:not(.collapsed) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #ff5b2e;
+  background: transparent;
+  border: 0;
+  box-shadow: 0;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 0 !important;
+}
+
+.accordion-button:focus {
+  color: #ff5b2e;
+  background: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-body {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #6c688a;
+  padding-top: 0;
+}
+
+/*=========================================================================================
+    12.0 - FAQ Page End
  ==========================================================================================*//*# sourceMappingURL=style.css.map */

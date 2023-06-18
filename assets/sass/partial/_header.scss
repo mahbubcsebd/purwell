@@ -57,8 +57,25 @@
             color: #fff !important;
         }
     }
+
+    .header-buttons {
+        .btn {
+            padding: 10px 24px;
+        }
+    }
 }
 
 .navbar-collapse {
     flex-grow: inherit;
+}
+
+.header-2 {
+    background: transparent;
+    margin-top: 50px;
+
+    .navbar.navbar-expand-xl {
+        padding: 12px 10px;
+        background: #fff;
+        border-radius: 8px;
+    }
 }
