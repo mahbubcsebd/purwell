@@ -3,6 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    padding: 180px 0 80px 0;
+
     .hero-content {
         display: flex;
         flex-direction: column;
@@ -66,4 +68,10 @@
             }
         }
     }
+}
+
+// Hero 2
+.hero-2 {
+    background: #ffded5;
+    padding: 180px 0 80px 0;
 }

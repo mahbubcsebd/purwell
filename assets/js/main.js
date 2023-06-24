@@ -49,10 +49,10 @@ $(document).ready(function () {
      =========================================================*/
 
     /* =========================================================
-        Education Slider Start
+        Testimonial Slider Start
      =========================================================*/
     $('#testimonial-1-slider').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 2,
@@ -69,6 +69,54 @@ $(document).ready(function () {
         ],
     });
     /* =========================================================
-        Education Slider End
+        Testimonial Slider End
+     =========================================================*/
+
+    /* =========================================================
+        Testimonial Slider Start
+     =========================================================*/
+    $('#testimonial-2-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('#testimonial-prev-1'),
+        nextArrow: $('#testimonial-next-1'),
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
+    /* =========================================================
+        Testimonial Slider End
+     =========================================================*/
+
+    /* =========================================================
+        Testimonial Slider Start
+     =========================================================*/
+    $('#team-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: $('#testimonial-prev-1'),
+        nextArrow: $('#testimonial-next-1'),
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
+    /* =========================================================
+        Testimonial Slider End
      =========================================================*/
 });
