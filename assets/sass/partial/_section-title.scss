@@ -1,11 +1,20 @@
+/*=========================================================================================
+    Section Title CSS Start
+ ==========================================================================================*/
 .section-title-box {
     max-width: 750px;
     margin: 0 auto;
     margin-bottom: 60px;
 
     .section-sm-title {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 8px;
         font-family: 'Inter';
@@ -35,7 +44,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #ff5b2e;
     position: relative;
@@ -63,9 +76,16 @@
 }
 
 .section-content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 36px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: start;
 }
 
@@ -75,7 +95,11 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #2f2d53;
 }
@@ -97,15 +121,26 @@
         font-size: 16px;
         line-height: 26px;
         color: #344054;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 8px;
     }
 }
 
 .section-title-box.text-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -131,3 +166,30 @@
         text-align: center;
     }
 }
+
+/* Section Top Title */
+.section-title-box {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    h2 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 62px;
+        text-align: center;
+        color: var(--dark-purple);
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        color: #6c688a;
+        margin-top: 16px;
+    }
+}
+/*=========================================================================================
+    Section Title CSS End
+ ==========================================================================================*/

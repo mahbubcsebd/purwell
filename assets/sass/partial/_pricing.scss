@@ -1,0 +1,107 @@
+/*=========================================================================================
+    Pricing CSS Start
+ ==========================================================================================*/
+.single-pricing {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 2px 8px rgba(123, 123, 123, 0.06);
+    box-shadow: 0px 2px 8px rgba(123, 123, 123, 0.06);
+    border-radius: 20px;
+
+    .pricing-top {
+        padding: 50px 30px;
+        text-align: center;
+
+        .pricing-name {
+            font-family: 'Syne';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
+            color: #170f49;
+            margin-bottom: 18px;
+        }
+
+        .pricing-rate {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 68px;
+            color: #170f49;
+        }
+
+        .pricing-rate span {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #6f6c90;
+        }
+    }
+
+    .pricing-bottom {
+        padding: 0 30px 45px 30px;
+
+        .pricing-collections {
+            li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin-bottom: 18px;
+
+                &:last-child {
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #344054;
+                }
+            }
+        }
+    }
+}
+
+.center-single-pricing {
+    background: #2f2d53 !important;
+    margin-top: -30px;
+
+    .pricing-top {
+        padding: 50px 30px;
+        text-align: center;
+
+        .pricing-name {
+            color: #fff;
+        }
+
+        .pricing-rate {
+            color: #fff;
+        }
+
+        .pricing-rate span {
+            color: #fff;
+        }
+    }
+
+    .pricing-bottom {
+        .pricing-collections {
+            li {
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/*=========================================================================================
+    Pricing CSS End
+ ==========================================================================================*/
