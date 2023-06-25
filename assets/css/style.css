@@ -4781,6 +4781,10 @@ label {
   background-position: center center;
   padding: 120px 0 80px 0;
 }
+.hero .hero-area {
+  position: relative;
+  z-index: 2;
+}
 .hero .hero-content {
   display: flex;
   flex-direction: column;
@@ -4836,7 +4840,18 @@ label {
 }
 
 .hero-1 {
-  background-image: url("../../images/hero-1-bg.png");
+  position: relative;
+  margin-bottom: 60px;
+  padding-bottom: 160px;
+}
+.hero-1 .hero-1-bg {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .hero-2 {
@@ -5452,9 +5467,8 @@ label {
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
-  display: flex;
-  align-items: center;
   color: #ff5b2e;
+  margin-bottom: 8px;
 }
 .section-title-box .section-title {
   font-family: "Syne";
@@ -5556,28 +5570,6 @@ label {
   line-height: 58px;
   color: #2f2d53;
   text-align: center;
-}
-
-/* Section Top Title */
-.section-title-box {
-  max-width: 750px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
-.section-title-box h2 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 62px;
-  text-align: center;
-  color: var(--dark-purple);
-}
-.section-title-box p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  text-align: center;
-  color: #6c688a;
-  margin-top: 16px;
 }
 
 /*=========================================================================================
@@ -5812,7 +5804,7 @@ label {
   line-height: 28px;
   color: #2b3a4b;
   background: #fffaf5;
-  z-index: 99999999;
+  z-index: 1;
   padding-left: 10px;
 }
 
@@ -5892,6 +5884,7 @@ label {
   align-items: center;
   gap: 18px;
   max-width: 480px;
+  padding: 0 20px;
 }
 
 .subscribe-box h2 {
@@ -5957,6 +5950,12 @@ label {
   bottom: 0;
   right: 60px;
   z-index: 9;
+}
+
+.subscribe-2 {
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 2;
 }
 
 /*=========================================================================================
@@ -6106,6 +6105,12 @@ label {
 
 .footer-bottom-link p {
   color: #fff;
+}
+
+.footer-2 .footer-area {
+  position: relative;
+  padding-top: 100px;
+  z-index: 1;
 }
 
 /*=========================================================================================
@@ -6306,6 +6311,65 @@ label {
 }
 .center-single-pricing .pricing-bottom .pricing-collections li p {
   color: #fff;
+}
+
+.toggle-btn {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+.toggle-btn .day {
+  color: #667085;
+  font-size: 20px;
+  font-family: Syne;
+  font-weight: 600;
+  line-height: 30px;
+}
+.toggle-btn .hour {
+  color: #344054;
+  font-size: 20px;
+  font-family: Syne;
+  font-weight: 600;
+  line-height: 30px;
+}
+.toggle-btn input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.toggle-btn label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 26px;
+  background: #d0d5dd;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+  margin-bottom: 0;
+}
+.toggle-btn label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90%;
+  transition: 0.3s;
+}
+.toggle-btn input:checked + label {
+  background: #ff5b2e;
+}
+.toggle-btn input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+.toggle-btn label:active:after {
+  width: 30px;
 }
 
 /*=========================================================================================
@@ -7087,6 +7151,13 @@ User All Form Page Start
   .about-us-img-box .aui-cat {
     right: -80px;
     width: 200px;
+  }
+  .hero-1-bg {
+    display: none;
+  }
+  .hero-1 {
+    background: #ffded5;
+    padding-bottom: 100px;
   }
   .accordion-body {
     padding: 10px 0;

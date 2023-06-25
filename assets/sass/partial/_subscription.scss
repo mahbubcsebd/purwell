@@ -70,6 +70,7 @@
     align-items: center;
     gap: 18px;
     max-width: 480px;
+    padding: 0 20px;
 }
 
 .subscribe-box h2 {
@@ -148,6 +149,12 @@
     bottom: 0;
     right: 60px;
     z-index: 9;
+}
+
+.subscribe-2 {
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 2;
 }
 /*=========================================================================================
     Subscription CSS End

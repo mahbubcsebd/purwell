@@ -22,9 +22,8 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 26px;
-        display: flex;
-        align-items: center;
         color: #ff5b2e;
+        margin-bottom: 8px;
     }
 
     .section-title {
@@ -167,29 +166,29 @@
     }
 }
 
-/* Section Top Title */
-.section-title-box {
-    max-width: 750px;
-    margin: 0 auto;
-    margin-bottom: 60px;
+// /* Section Top Title */
+// .section-title-box {
+//     max-width: 750px;
+//     margin: 0 auto;
+//     margin-bottom: 60px;
 
-    h2 {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 62px;
-        text-align: center;
-        color: var(--dark-purple);
-    }
+//     h2 {
+//         font-weight: 600;
+//         font-size: 48px;
+//         line-height: 62px;
+//         text-align: center;
+//         color: var(--dark-purple);
+//     }
 
-    p {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
-        text-align: center;
-        color: #6c688a;
-        margin-top: 16px;
-    }
-}
+//     p {
+//         font-weight: 400;
+//         font-size: 18px;
+//         line-height: 32px;
+//         text-align: center;
+//         color: #6c688a;
+//         margin-top: 16px;
+//     }
+// }
 /*=========================================================================================
     Section Title CSS End
  ==========================================================================================*/
