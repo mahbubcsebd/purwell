@@ -1,6 +1,8 @@
 /*=========================================================================================
     Keyframes CSS Start
  ==========================================================================================*/
+@use '../utility/index' as variable;
+
 @-webkit-keyframes spinnerRotateone {
     0% {
         -webkit-transform: rotate(0deg) translateY(30px);

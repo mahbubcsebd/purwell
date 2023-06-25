@@ -1,6 +1,8 @@
 /*=========================================================================================
     About Us CSS Start
  ==========================================================================================*/
+@use '../utility/index' as variable;
+
 .about-us-img-box {
     width: 370px;
     height: 450px;
@@ -12,6 +14,8 @@
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
+        position: relative;
+        z-index: 2;
     }
 
     .aui-dot {
@@ -19,7 +23,7 @@
         content: '';
         top: -80px;
         right: -80px;
-        z-index: -1;
+        z-index: 1;
     }
 
     .aui-cat {

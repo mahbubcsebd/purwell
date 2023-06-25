@@ -1,6 +1,8 @@
 /*=========================================================================================
     Happy Customer CSS Start
  ==========================================================================================*/
+@use '../utility/index' as variable;
+
 .happy-customer-area {
     background: url('../images/customer-bg.svg');
     background-repeat: no-repeat;

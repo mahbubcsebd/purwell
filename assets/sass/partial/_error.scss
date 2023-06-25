@@ -1,6 +1,8 @@
 /*=========================================================================================
     404 Page Start
  ==========================================================================================*/
+@use '../utility/index' as variable;
+
 .error-page {
     padding-top: 160px;
 }
@@ -15,7 +17,7 @@
     font-weight: 700;
     font-size: 58px;
     line-height: 68px;
-    color: #ff5b2e;
+    color: variable.$orange;
     margin-bottom: 8px;
 }
 

@@ -4216,7 +4216,7 @@ a {
   -o-transition: 0.3s ease all;
 }
 a:hover {
-  color: var(--dark-purple);
+  color: v;
   cursor: pointer;
 }
 
@@ -4337,26 +4337,8 @@ body {
   color: #ff5b2e !important;
 }
 
-.text-purple {
-  color: var(--purple);
-}
-
-/* Button Start */
-.btn-purple {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-  color: #fff;
-  background: linear-gradient(101.04deg, #9c4df4 0%, #b071f6 100%);
-  box-shadow: 0px 4px 20px rgba(161, 86, 245, 0.2);
-  border-radius: 8px;
-  padding: 20px 30px;
-  transition: 0.3s ease all;
-  border: 1px solid var(--purple);
-}
-.btn-purple:hover {
-  color: #fff;
+.bg-cream {
+  background: #fffaf5;
 }
 
 /* Slick Slider */
@@ -4394,19 +4376,6 @@ body {
 
 .slick-dots {
   bottom: -40px !important;
-}
-
-/* Color */
-.bg-cream {
-  background: #ffefea;
-}
-
-.bg-gray {
-  background: #faf6fe;
-}
-
-.bg-pink {
-  background: #ffded5;
 }
 
 /* Utility */
@@ -4932,13 +4901,15 @@ label {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  position: relative;
+  z-index: 2;
 }
 .about-us-img-box .aui-dot {
   position: absolute;
   content: "";
   top: -80px;
   right: -80px;
-  z-index: -1;
+  z-index: 1;
 }
 .about-us-img-box .aui-cat {
   position: absolute;
@@ -7265,6 +7236,9 @@ User All Form Page Start
   }
   .btn {
     padding: 10px 20px;
+  }
+  .subscribe-form-box {
+    height: 64px;
   }
   .page-title {
     font-size: 36px;
