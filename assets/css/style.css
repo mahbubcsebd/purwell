@@ -4187,6 +4187,18 @@ video {
   padding-bottom: 400px !important;
 }
 
+.section {
+  padding: 100px 0;
+}
+
+.section-pt {
+  padding-top: 100px;
+}
+
+.section-pb {
+  padding-bottom: 100px;
+}
+
 /*=========================================================================================
     Utility CSS End
  ==========================================================================================*/
@@ -4337,8 +4349,16 @@ body {
   color: #ff5b2e !important;
 }
 
-.bg-cream {
+.bg-lightPink {
   background: #fffaf5;
+}
+
+.bg-pink {
+  background: #ffefea;
+}
+
+.bg-white {
+  background: #fff;
 }
 
 /* Slick Slider */
@@ -4376,11 +4396,6 @@ body {
 
 .slick-dots {
   bottom: -40px !important;
-}
-
-/* Utility */
-.py-150 {
-  padding: 150px 0;
 }
 
 /* Page Title Box Start */
@@ -4457,69 +4472,6 @@ body {
 }
 
 /* Page Title Box End */
-/* Pagination Start */
-.pagination-box ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.pagination-box ul .prev,
-.pagination-box ul .next {
-  width: 44px;
-  height: 44px;
-  background: #f2e6ff;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--purple);
-  font-size: 18px;
-  transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
-}
-
-.pagination-box ul .prev.active,
-.pagination-box ul .next.active {
-  background: linear-gradient(101.04deg, #9c4df4 0%, #b071f6 100%) !important;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  color: #fff;
-}
-
-.pagination-text {
-  font-family: "Metropolis";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  color: #0a033c;
-}
-
-.pagination-link.active {
-  width: 44px;
-  height: 44px;
-  background: #fff;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #3e4756;
-}
-
-.pagination-link.active a {
-  font-family: "Metropolis";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  color: #3e4756;
-}
-
-/* Pagination End */
 /* Form */
 label {
   font-family: "Inter";
@@ -4553,8 +4505,8 @@ label {
 }
 
 .form-check-input:focus {
-  border-color: var(--purple);
-  box-shadow: 0 0 0 0.25rem rgba(156, 77, 244, 0.25);
+  border-color: #ff5b2e;
+  box-shadow: none;
 }
 
 .shop-p-filter.form-select {
@@ -4590,7 +4542,6 @@ label {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
 
 ::-moz-placeholder {
@@ -4608,10 +4559,10 @@ label {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: var(--purple);
+  border-color: #ff5b2e;
   outline: 0;
-  border: 1px solid #d6bbfb;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #f4ebff;
+  border: 1px solid #ff5b2e;
+  box-shadow: none;
 }
 
 .input-group-prepend {
@@ -4637,7 +4588,7 @@ label {
 }
 
 .slick-dots li.slick-active button:before {
-  color: var(--purple);
+  color: #ff5b2e;
   font-size: 12px;
 }
 
@@ -4657,7 +4608,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--purple);
+  background: #ff5b2e;
   color: #fff;
   border-radius: 6px;
 }
@@ -4821,11 +4772,16 @@ label {
   width: 100%;
   height: 100%;
   z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-2 {
   background: #ffded5;
   padding: 180px 0 80px 0;
+}
+.hero-2 .hero-content .hero-text {
+  width: 80%;
 }
 
 .safe-icon-box {
@@ -4852,7 +4808,8 @@ label {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.hero-img-box-2 .safe-box {
+
+.safe-box {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -4868,15 +4825,20 @@ label {
   border-radius: 0px 15px;
   background: #fff;
   box-shadow: 1px 6px 15px 0px rgba(87, 87, 87, 0.1), -2px -1px 8px 0px rgba(154, 154, 154, 0.06);
+  z-index: 3;
 }
-.hero-img-box-2 .safe-content h4 {
+
+.safe-content {
+  text-align: left;
+}
+.safe-content h4 {
   color: #344054;
   font-size: 24px;
   font-family: Syne;
   font-weight: 700;
   line-height: 34px;
 }
-.hero-img-box-2 .safe-content p {
+.safe-content p {
   color: #475467;
   font-size: 16px;
   font-family: Syne;
@@ -4916,6 +4878,7 @@ label {
   content: "";
   bottom: -30px;
   right: -130px;
+  z-index: 3;
 }
 
 .about-us-img-box-2 {
@@ -5359,6 +5322,8 @@ label {
   -moz-border-radius: 0px 30px 0px 30px;
   -ms-border-radius: 0px 30px 0px 30px;
   -o-border-radius: 0px 30px 0px 30px;
+  position: relative;
+  z-index: 3;
 }
 
 .single-testimonial-2 {
@@ -5764,7 +5729,7 @@ label {
   color: #2b3a4b;
   position: relative;
   background: #fffaf5;
-  z-index: 1;
+  z-index: 2;
   padding-right: 10px;
 }
 .working-hours-box .working-collection li .day-hours {
@@ -5796,6 +5761,16 @@ label {
   font-size: 18px;
   color: #fff;
   background: #667085;
+}
+
+.bg-pink .day-hours,
+.bg-pink .day-name {
+  background: #ffefea !important;
+}
+
+.bg-white .day-hours,
+.bg-white .day-name {
+  background: #fff !important;
 }
 
 /*=========================================================================================
@@ -6206,6 +6181,54 @@ label {
 
 /*=========================================================================================
     FAQ Page End
+ ==========================================================================================*/
+/*=========================================================================================
+    Pagination CSS Start
+ ==========================================================================================*/
+.pagination-box ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pagination-box ul li .pagination-link {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #98a2b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #98a2b3;
+  font-size: 12px;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
+.pagination-box ul li .pagination-link.active {
+  color: #fff !important;
+  background: #ff5b2e !important;
+  border-color: #ff5b2e !important;
+}
+.pagination-box ul li .pagination-link.active a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #3e4756;
+}
+.pagination-box ul li .prev.active,
+.pagination-box ul li .next.active {
+  color: #ff5b2e !important;
+  background: transparent !important;
+  border: 1px solid #98a2b3 !important;
+}
+
+/*=========================================================================================
+    Pagination CSS Start
  ==========================================================================================*/
 /*=========================================================================================
     Pricing CSS Start
@@ -6952,11 +6975,17 @@ User All Form Page Start
   text-align: right;
   margin-left: auto;
 }
+.features-lg-img .safe-box {
+  bottom: 30px !important;
+  left: 30px !important;
+}
 
 .features-lg {
   width: 100%;
   height: 100%;
   border-radius: 180px 0px 0px 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .features-dot {
@@ -6964,7 +6993,7 @@ User All Form Page Start
   content: "";
   top: -18px;
   left: -15px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .features-lg-img::after {
@@ -7123,6 +7152,9 @@ User All Form Page Start
     right: -80px;
     width: 200px;
   }
+  .safe-box {
+    display: none;
+  }
   .hero-1-bg {
     display: none;
   }
@@ -7179,6 +7211,9 @@ User All Form Page Start
 @media screen and (max-width: 992px) {
   .about-us-img-box-2 {
     width: 100%;
+  }
+  .features-dot {
+    display: none;
   }
   .services-name {
     font-size: 26px;
